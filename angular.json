@@ -89,23 +89,18 @@
             }
           },
           "defaultConfiguration": "production"
-        },
-        "serve": {
+        },        "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
-          "options": {
-            "browserTarget": "mifosx-web-app:build"
-          },
+          "defaultConfiguration": "development",
           "configurations": {
-            "development": {
-              "browserTarget": "mifosx-web-app:build:development"
-            },
             "production": {
               "browserTarget": "mifosx-web-app:build:production"
+            },
+            "development": {
+              "browserTarget": "mifosx-web-app:build:development"
             }
-          },
-          "defaultConfiguration": "development"
-        },
-        "extract-i18n": {
+          }
+        },        "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
             "browserTarget": "mifosx-web-app:build"

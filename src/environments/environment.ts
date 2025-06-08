@@ -18,8 +18,8 @@ export const environment = {
   fineractPlatformTenantIds: loadedEnv['fineractPlatformTenantIds'] || 'default',
   // For connecting to others servers running elsewhere update the base API URL
   baseApiUrls:
-    loadedEnv['fineractApiUrls'] ||
-    'https://sandbox.mifos.community,https://demo.mifos.community,https://localhost:8443,' + window.location.origin,
+    loadedEnv.fineractApiUrls ||
+    'https://core-dev.softobotics.com',
   // For connecting to server running elsewhere set the base API URL
   baseApiUrl:
     loadedEnv['fineractApiUrl'] ||
