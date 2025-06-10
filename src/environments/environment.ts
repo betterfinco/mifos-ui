@@ -25,8 +25,7 @@ export const environment = {
     loadedEnv['fineractApiUrl'] ||
     (loadedEnv['fineractApiUrls']?.length > 0 ? loadedEnv['fineractApiUrls'].split(',')[0] : window.location.origin),
   allowServerSwitch: env.allow_switching_backend_instance,
-  apiProvider: loadedEnv['apiProvider'] || '/fineract-provider/api',
-  apiVersion: loadedEnv['apiVersion'] || '/v1',
+  apiProvider: loadedEnv['apiProvider'] || '/fineract-provider/api',  apiVersion: loadedEnv['apiVersion'] || '',
   serverUrl: '',
   oauth: {
     enabled: loadedEnv['oauthServerEnabled'] || false, // For connecting to Mifos X using OAuth2 Authentication change the value to true
