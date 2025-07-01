@@ -79,13 +79,47 @@
               "vendorChunk": false
             },
             "development": {
+
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.dev.ts"
+                }
+              ],
               "optimization": false,
               "sourceMap": true,
               "namedChunks": true,
               "extractLicenses": true,
               "aot": true,
+              "buildOptimizer": false,
+              "vendorChunk": true
+            },
+            "staging": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.staging.ts"
+                }
+              ],
+              "optimization": true,
+              "sourceMap": true,
+              "namedChunks": true,
+              "extractLicenses": true,
+              "aot": true,
               "buildOptimizer": true,
-              "vendorChunk": false
+              "vendorChunk": false,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "8mb",
+                  "maximumError": "10mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "64kb",
+                  "maximumError": "128kb"
+                }
+              ]
             }
           },
           "defaultConfiguration": "production"
@@ -98,6 +132,9 @@
             },
             "development": {
               "browserTarget": "mifosx-web-app:build:development"
+            },
+            "staging": {
+              "browserTarget": "mifosx-web-app:build:staging"
             }
           }
         },        "extract-i18n": {
@@ -148,6 +185,9 @@
           "configurations": {
             "production": {
               "devServerTarget": "mifosx-web-app:serve:production"
+            },
+            "staging": {
+              "devServerTarget": "mifosx-web-app:serve:staging"
             }
           }
         },
@@ -168,6 +208,9 @@
           "configurations": {
             "production": {
               "devServerTarget": "mifosx-web-app:serve:production"
+            },
+            "staging": {
+              "devServerTarget": "mifosx-web-app:serve:staging"
             }
           }
         }

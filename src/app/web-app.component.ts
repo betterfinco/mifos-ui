@@ -13,7 +13,7 @@ import { filter, map, mergeMap } from 'rxjs/operators';
 import { TranslateService } from '@ngx-translate/core';
 
 /** Environment Configuration */
-import { environment } from 'environments/environment';
+import { environment } from 'environments/environment.dev';
 
 /** Custom Services */
 import { Logger } from './core/logger/logger.service';
