@@ -18,7 +18,7 @@ jobs:
             - name: Install Dependencies
               run: npm install
             - name: Build Application
-              run: npm run build:dev
+              run: npm run build:staging
             - name: Clean S3 Bucket
               run: |
                   aws s3 rm s3://${{ vars.AWS_BUCKET }} --recursive
