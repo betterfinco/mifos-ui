@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { MatDialogRef } from '@angular/material/dialog';
-import { environment } from '../../../environments/environment';
+import { environment } from '../../../environments/environment.dev';
 
 @Component({
   selector: 'mifosx-warning-dialog',
