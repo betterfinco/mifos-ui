@@ -20,7 +20,7 @@ export const environment = {
   baseApiUrls: 'https://core-stage.betterfinco.com',
   // For connecting to server running elsewhere set the base API URL
   baseApiUrl: 'https://core-stage.betterfinco.com',
-  allowServerSwitch: env.allow_switching_backend_instance,
+  allowServerSwitch: false, // Disable server switching in staging
   apiProvider: loadedEnv['apiProvider'] || '/fineract-provider/api',
   apiVersion: loadedEnv['apiVersion'] || '/v1',
   serverUrl: '',

@@ -154,6 +154,10 @@ export class SettingsService {
    * Returns server setting
    */
   get server() {
+    // If server switching is disabled (e.g., in staging), always use environment configuration
+    if (!environment.allowServerSwitch && environment.baseApiUrl && environment.baseApiUrl !== '') {
+      return environment.baseApiUrl;
+    }
     if (localStorage.getItem('mifosXServerURL')) {
       return localStorage.getItem('mifosXServerURL');
     }

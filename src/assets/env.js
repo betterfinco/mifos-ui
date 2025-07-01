@@ -2,14 +2,14 @@
   window["env"] = window["env"] || {};
 
   // BackEnd Environment variables
-  window["env"]["fineractApiUrls"] = '';
-  window["env"]["fineractApiUrl"]  = '';
+  window["env"]["fineractApiUrls"] = 'https://core-stage.betterfinco.com';
+  window["env"]["fineractApiUrl"]  = 'https://core-stage.betterfinco.com';
 
   window["env"]["apiProvider"] = '';
   window["env"]["apiVersion"]  = '';
 
-  window["env"]["fineractPlatformTenantId"]  = '';
-  window["env"]["fineractPlatformTenantIds"]  = '';
+  window["env"]["fineractPlatformTenantId"]  = 'stage';
+  window["env"]["fineractPlatformTenantIds"]  = 'stage';
 
   // Language Environment variables
   window["env"]["defaultLanguage"] = '';
