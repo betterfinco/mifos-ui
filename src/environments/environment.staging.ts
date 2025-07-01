@@ -14,8 +14,8 @@ export const environment = {
   version: env.mifos_x.version,
   hash: env.mifos_x.hash,
   // For connecting to server running elsewhere update the tenant identifier
-  fineractPlatformTenantId: loadedEnv['fineractPlatformTenantId'] || 'default',
-  fineractPlatformTenantIds: loadedEnv['fineractPlatformTenantIds'] || 'default',
+  fineractPlatformTenantId: loadedEnv['fineractPlatformTenantId'] || 'stage',
+  fineractPlatformTenantIds: loadedEnv['fineractPlatformTenantIds'] || 'stage',
   // For connecting to others servers running elsewhere update the base API URL
   baseApiUrls: 'https://core-stage.betterfinco.com',
   // For connecting to server running elsewhere set the base API URL
