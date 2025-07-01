@@ -19,7 +19,7 @@ export const environment = {
   // For connecting to others servers running elsewhere update the base API URL
   baseApiUrls:
     loadedEnv.fineractApiUrls ||
-    'https://core-dev.betterfinco.com',
+    'https://core-stage.betterfinco.com',
   // For connecting to server running elsewhere set the base API URL
   baseApiUrl:
     loadedEnv['fineractApiUrl'] ||
