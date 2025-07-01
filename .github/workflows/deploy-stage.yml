@@ -1,5 +1,5 @@
-name: Mifos Frontend deploy
-
+name: BetterFinco stage Frontend deploy
+1
 on:
     push:
         branches: [staging-betterfinco]

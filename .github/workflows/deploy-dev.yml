@@ -1,4 +1,4 @@
-name: Mifos Frontend deploy
+name: BetterFinco dev Frontend deploy
 
 on:
     push:
