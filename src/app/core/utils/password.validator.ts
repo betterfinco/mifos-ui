@@ -1,5 +1,5 @@
 import { AbstractControl, ValidationErrors, ValidatorFn } from '@angular/forms';
-import { environment } from 'environments/environment';
+import { environment } from 'environments/environment.dev';
 
 export function passwordValidator(): ValidatorFn {
   return (control: AbstractControl): ValidationErrors | null => {
