@@ -79,6 +79,7 @@
               "vendorChunk": false
             },
             "development": {
+
               "fileReplacements": [
                 {
                   "replace": "src/environments/environment.ts",
