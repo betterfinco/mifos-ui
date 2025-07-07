@@ -28,7 +28,7 @@
       </mat-autocomplete>
     </mat-card-content>
 
-    <img mat-card-image src="assets/images/mifos_lg-logo.png" alt="Mifos X" />
+    <img mat-card-image style="width: 100%; margin: 0;" src="assets/images/better-finco-logo.svg" alt="Mifos X" />
   </mat-card>
 </div>
 
@@ -37,20 +37,12 @@
     <button mat-raised-button color="warn" (click)="popover.close(); configurationWizardService.closeConfigWizard()">
       {{ 'labels.buttons.Close' | translate }}
     </button>
-    <button
-      *ngIf="prev"
-      mat-raised-button
-      color="primary"
-      (click)="popover.close(); showPopover(prev.template, prev.target, 'bottom', true)"
-    >
+    <button *ngIf="prev" mat-raised-button color="primary"
+      (click)="popover.close(); showPopover(prev.template, prev.target, 'bottom', true)">
       {{ 'labels.buttons.Back' | translate }}
     </button>
-    <button
-      *ngIf="next"
-      mat-raised-button
-      color="primary"
-      (click)="popover.close(); showPopover(next.template, next.target, 'bottom', true)"
-    >
+    <button *ngIf="next" mat-raised-button color="primary"
+      (click)="popover.close(); showPopover(next.template, next.target, 'bottom', true)">
       {{ 'labels.buttons.Next' | translate }}
     </button>
   </div>
@@ -66,11 +58,8 @@
     <button mat-raised-button color="primary" (click)="popover.close(); previousStep()">
       {{ 'labels.buttons.Back' | translate }}
     </button>
-    <button
-      mat-raised-button
-      color="primary"
-      (click)="popover.close(); showPopover(templateSearchActivity, searchActivity, 'top', true)"
-    >
+    <button mat-raised-button color="primary"
+      (click)="popover.close(); showPopover(templateSearchActivity, searchActivity, 'top', true)">
       {{ 'labels.buttons.Next' | translate }}
     </button>
   </div>
@@ -83,11 +72,8 @@
     <button mat-raised-button color="warn" (click)="popover.close(); configurationWizardService.closeConfigWizard()">
       {{ 'labels.buttons.Close' | translate }}
     </button>
-    <button
-      mat-raised-button
-      color="primary"
-      (click)="popover.close(); showPopover(templateButtonDashboard, buttonDashboard, 'bottom', true)"
-    >
+    <button mat-raised-button color="primary"
+      (click)="popover.close(); showPopover(templateButtonDashboard, buttonDashboard, 'bottom', true)">
       {{ 'labels.buttons.Back' | translate }}
     </button>
     <button mat-raised-button color="primary" (click)="popover.close(); nextStep()">
