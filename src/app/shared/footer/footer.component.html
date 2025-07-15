@@ -2,7 +2,7 @@
   <mat-divider fxFlexAlign="center" class="divider"></mat-divider>
   <div fxLayout="column" class="m-b-20 content">
     <table class="versions">
-      <tr>
+      <!-- <tr>
         <td class="footer-content">Mifos</td>
         <td class="right footer-content">
           {{ versions.mifos }} - <b>{{ hash }}</b>
@@ -13,7 +13,7 @@
         <td class="right footer-content">
           {{ versions.fineract.version }} - <b>{{ versions.fineract.hash }}</b>
         </td>
-      </tr>
+      </tr> -->
       <tr *ngIf="displayBackEndInfo">
         <td colspan="2" class="center footer-content">
           <b>{{ server }}</b>
