@@ -4,7 +4,7 @@ import { AlertService } from 'app/core/alert/alert.service';
 import { Dates } from 'app/core/utils/dates';
 
 /** Environment Imports */
-import { environment } from '../../environments/environment.staging';
+import { environment } from '../../environments/environment.dev';
 
 /**
  * Settings Service
