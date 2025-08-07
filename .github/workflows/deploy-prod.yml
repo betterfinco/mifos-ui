@@ -18,8 +18,11 @@ jobs:
                   node-version: ${{ matrix.node-version }}
             - name: Install Dependencies
               run: npm install
+            - name: Set target env
+              run: |
+                echo "TARGET_ENV=production" >> $GITHUB_ENV
             - name: Build Application
-              run: npm run build:prod
+              run: npm run build:${TARGET_ENV}
             - name: Clean S3 Bucket
               run: |
                   aws s3 rm s3://${{ vars.AWS_BUCKET }} --recursive
