@@ -11,14 +11,9 @@ export const environment = {
   // For connecting to server running elsewhere update the tenant identifier
   fineractPlatformTenantId: loadedEnv['fineractPlatformTenantId'] || 'default',
   fineractPlatformTenantIds: loadedEnv['fineractPlatformTenantIds'] || 'default',
-  // For connecting to others servers running elsewhere update the base API URL
-  baseApiUrls:
-    loadedEnv['fineractApiUrls'] ||
-    'https://sandbox.mifos.community,https://demo.mifos.community,https://localhost:8443,' + window.location.origin,
+  baseApiUrls: 'https://core.betterfinco.com',
   // For connecting to server running elsewhere set the base API URL
-  baseApiUrl:
-    loadedEnv['fineractApiUrl'] ||
-    (loadedEnv['fineractApiUrls']?.length > 0 ? loadedEnv['fineractApiUrls'].split(',')[0] : window.location.origin),
+  baseApiUrl: 'https://core.betterfinco.com',
   oauthServerUrl: loadedEnv['oauthServerUrl'] || loadedEnv['fineractApiUrl'] + loadedEnv['apiProvider'],
   allowServerSwitch: env.allow_switching_backend_instance,
   apiProvider: loadedEnv['apiProvider'] || '/fineract-provider/api',

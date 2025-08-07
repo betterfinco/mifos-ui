@@ -2,7 +2,7 @@ name: BetterFinco prod Frontend deploy
 
 on:
     push:
-        branches: [prod-betterfinco]
+        branches: [betterfinco-prod]
 jobs:
     deploy:
         runs-on: ubuntu-latest
