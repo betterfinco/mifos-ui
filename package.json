@@ -13,10 +13,11 @@
   "scripts": {
     "prepare": "husky",
     "ng": "ng",
+    "env": "node scripts/generate-env.js",
     "build": "node version.js && npm run env -s && ng build --configuration production --output-hashing=none",
-    "build:dev": "node version.js && node --max-old-space-size=16384 ./node_modules/@angular/cli/bin/ng build --configuration development --output-hashing=none",
-    "build:staging": "node version.js && npm run env -s && node --max-old-space-size=16384 ./node_modules/@angular/cli/bin/ng build --configuration staging --output-hashing=none",
-    "build:prod": "node version.js && npm run env -s && node --max-old-space-size=16384 ./node_modules/@angular/cli/bin/ng build --configuration production --output-hashing=none",
+    "build:dev": "node version.js && npm run env -s && ng build --configuration development --output-hashing=none",
+    "build:staging": "node version.js && npm run env -s && ng build --configuration staging --output-hashing=none",
+    "build:prod": "node version.js && npm run env -s && ng build --configuration production --output-hashing=none",
     "start": "ng serve -o",
     "serve:dev": "npm run env -s && ng serve --configuration development",
     "serve:staging": "npm run env -s && ng serve --configuration staging",
@@ -26,7 +27,6 @@
     "test:ci": "npm run env -s && npm run lint -s && ng test --code-coverage --watch=false",
     "e2e": "ng e2e",
     "translations:extract": "ngx-translate-extract --input ./src --output ./src/translations/template.json --format=json --clean -sort --marker extract",
-    "env": "node version.js",
     "postinstall": "node version.js && ngcc",
     "cypress:open": "cypress open",
     "cypress:run": "cypress run"

@@ -5,6 +5,7 @@
   window["env"]["fineractApiUrls"] = 'https://core-stage.betterfinco.com';
   window["env"]["fineractApiUrl"]  = 'https://core-stage.betterfinco.com';
 
+
   window["env"]["apiProvider"] = '';
   window["env"]["apiVersion"]  = '';
 
