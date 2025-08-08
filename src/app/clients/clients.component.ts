@@ -6,7 +6,7 @@ import { MatSort, Sort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
 
 /** Custom Services */
-import { environment } from 'environments/environment.dev';
+import { environment } from 'environments/environment';
 import { ClientsService } from './clients.service';
 
 @Component({

@@ -1,6 +1,6 @@
 import { Component, Input, OnDestroy, OnInit } from '@angular/core';
 import { SystemService } from 'app/system/system.service';
-import { environment } from 'environments/environment.dev';
+import { environment } from 'environments/environment';
 
 @Component({
   selector: 'mifosx-cob-workflow',

@@ -18,7 +18,7 @@ import { Dates } from 'app/core/utils/dates';
 import { MatInput } from '@angular/material/input';
 
 /** Environment Configuration */
-import { environment } from 'environments/environment.dev';
+import { environment } from 'environments/environment';
 
 /**
  * Create account transfers

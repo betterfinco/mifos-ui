@@ -6,7 +6,7 @@ import { forkJoin } from 'rxjs';
 
 /** Custom Services */
 import { NotificationsService } from 'app/notifications/notifications.service';
-import { environment } from 'environments/environment.dev';
+import { environment } from 'environments/environment';
 
 /**
  * Notifications Tray Component
