@@ -21,6 +21,7 @@
     "start": "ng serve -o",
     "serve:dev": "npm run env -s && ng serve --configuration development",
     "serve:staging": "npm run env -s && ng serve --configuration staging",
+    "serve:production": "npm run env -s && ng serve --configuration production",
     "serve:sw": "npm run build -s && npx http-server ./dist -p 4200",
     "lint": "ng lint && stylelint \"src/**/*.scss\" && prettier . --check && htmlhint \"src\" --config .htmlhintrc",
     "test": "npm run env -s && ng test",
