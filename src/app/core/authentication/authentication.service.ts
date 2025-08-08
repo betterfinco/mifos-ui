@@ -13,7 +13,7 @@ import { AlertService } from '../alert/alert.service';
 import { AuthenticationInterceptor } from './authentication.interceptor';
 
 /** Environment Configuration */
-import { environment } from '../../../environments/environment.dev';
+import { environment } from '../../../environments/environment';
 
 /** Custom Models */
 import { LoginContext } from './login-context.model';
