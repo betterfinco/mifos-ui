@@ -17,7 +17,7 @@
     "build": "node version.js && npm run env -s && ng build --configuration production --output-hashing=none",
     "build:dev": "node version.js && npm run env -s && ng build --configuration development --output-hashing=none",
     "build:staging": "node version.js && npm run env -s && ng build --configuration staging --output-hashing=none",
-    "build:prod": "node version.js && npm run env -s && ng build --configuration production --output-hashing=none",
+    "build:production": "node version.js && npm run env -s && ng build --configuration production --output-hashing=none",
     "start": "ng serve -o",
     "serve:dev": "npm run env -s && ng serve --configuration development",
     "serve:staging": "npm run env -s && ng serve --configuration staging",
