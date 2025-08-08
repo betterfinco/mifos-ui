@@ -12,7 +12,7 @@ import { Alert } from '../core/alert/alert.model';
 import { AlertService } from '../core/alert/alert.service';
 
 /** Environment Imports */
-import { environment } from '../../environments/environment.dev';
+import { environment } from '../../environments/environment';
 import { SettingsService } from 'app/settings/settings.service';
 
 /**
