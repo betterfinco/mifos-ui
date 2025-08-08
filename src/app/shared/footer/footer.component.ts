@@ -9,7 +9,7 @@ import { SystemService } from 'app/system/system.service';
 import { VersionService } from 'app/system/version.service';
 
 /** Environment Configuration */
-import { environment } from 'environments/environment.dev';
+import { environment } from 'environments/environment';
 import { Subscription } from 'rxjs';
 
 /**

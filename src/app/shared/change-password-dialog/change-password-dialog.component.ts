@@ -4,7 +4,7 @@ import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { UntypedFormBuilder, Validators, ValidatorFn, AbstractControl, ValidationErrors } from '@angular/forms';
 import { Subscription } from 'rxjs';
 import { PasswordsUtility } from 'app/core/utils/passwords-utility';
-import { environment } from 'environments/environment.dev';
+import { environment } from 'environments/environment';
 
 /**
  * Change Password Dialog component.

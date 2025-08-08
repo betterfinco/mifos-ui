@@ -17,7 +17,7 @@ import { Currency } from 'app/shared/models/general.model';
 import { TranslateService } from '@ngx-translate/core';
 
 /** Environment Configuration */
-import { environment } from 'environments/environment.dev';
+import { environment } from 'environments/environment';
 
 /**
  * Savings Account View Component

@@ -3,7 +3,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { ActivatedRoute } from '@angular/router';
 import { SavingsService } from 'app/savings/savings.service';
 import { SettingsService } from 'app/settings/settings.service';
-import { environment } from 'environments/environment.dev';
+import { environment } from 'environments/environment';
 
 @Component({
   selector: 'mifosx-savings-documents-tab',

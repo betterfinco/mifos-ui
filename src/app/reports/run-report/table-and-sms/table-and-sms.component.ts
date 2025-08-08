@@ -11,7 +11,7 @@ import { FormfieldBase } from 'app/shared/form-dialog/formfield/model/formfield-
 import { SelectBase } from 'app/shared/form-dialog/formfield/model/select-base';
 import { InputBase } from 'app/shared/form-dialog/formfield/model/input-base';
 import { FormDialogComponent } from 'app/shared/form-dialog/form-dialog.component';
-import { environment } from 'environments/environment.dev';
+import { environment } from 'environments/environment';
 import { ProgressBarService } from 'app/core/progress-bar/progress-bar.service';
 
 import * as XLSX from 'xlsx';
