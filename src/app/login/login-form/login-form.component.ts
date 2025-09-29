@@ -43,7 +43,6 @@ export class LoginFormComponent implements OnInit {
    */
   ngOnInit() {
     this.createLoginForm();
-    this.setBaseUrl();
   }
 
   /**
@@ -119,10 +118,6 @@ export class LoginFormComponent implements OnInit {
     }
     return '';
   }
-
-   setBaseUrl(): void {
-      this.settingsService.setServer(environment.baseApiUrls.split(','));
-    }
 
   
 }

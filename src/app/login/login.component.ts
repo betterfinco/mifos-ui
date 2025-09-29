@@ -61,8 +61,6 @@ export class LoginComponent implements OnInit, OnDestroy {
         this.router.navigate(['/'], { replaceUrl: true });
       }
     });
-    this.settingsService.setServer(environment.baseApiUrl);
-    this.setBaseUrl();
   }
 
   /**
@@ -77,11 +75,6 @@ export class LoginComponent implements OnInit, OnDestroy {
     this.settingsService.setTenantIdentifier(environment.fineractPlatformTenantId || 'default');
     this.settingsService.setTenantIdentifiers(environment.fineractPlatformTenantIds.split(','));
     this.settingsService.setServers(environment.baseApiUrls.split(','));
-    window.location.reload();
-  }
-
-  setBaseUrl(): void {
-    this.settingsService.setServer(environment.baseApiUrls.split(','));
     window.location.reload();
   }
 
