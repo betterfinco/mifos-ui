@@ -7,6 +7,8 @@ import { finalize } from 'rxjs/operators';
 
 /** Custom Services */
 import { AuthenticationService } from '../../core/authentication/authentication.service';
+import { SettingsService } from 'app/settings/settings.service';
+import { environment } from 'environments/environment.dev';
 
 /**
  * Login form component.
@@ -30,7 +32,8 @@ export class LoginFormComponent implements OnInit {
    */
   constructor(
     private formBuilder: FormBuilder,
-    private authenticationService: AuthenticationService
+    private authenticationService: AuthenticationService,
+    private settingsService: SettingsService,
   ) {}
 
   /**
@@ -115,4 +118,6 @@ export class LoginFormComponent implements OnInit {
     }
     return '';
   }
+
+  
 }

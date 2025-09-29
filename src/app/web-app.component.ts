@@ -213,6 +213,11 @@ export class WebAppComponent implements OnInit {
     }
     this.settingsService.setTenantIdentifiers(environment.fineractPlatformTenantIds.split(','));
 
+    if(!localStorage.getItem('mifosXServerURL')) {
+      this.settingsService.setServer(environment.baseApiUrls);
+    }
+
+
     // Subscribe to session timeout If IdleTimeout is higher than 0 (zero)
     if (environment.session.timeout.idleTimeout > 0) {
       this.idle.$onSessionTimeout.subscribe(() => {
