@@ -61,6 +61,7 @@ export class LoginComponent implements OnInit, OnDestroy {
         this.router.navigate(['/'], { replaceUrl: true });
       }
     });
+    this.settingsService.setServer(environment.baseApiUrls.split(','));
   }
 
   /**

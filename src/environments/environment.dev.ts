@@ -17,10 +17,13 @@ export const environment = {
   fineractPlatformTenantId: loadedEnv['fineractPlatformTenantId'] || 'default',
   fineractPlatformTenantIds: loadedEnv['fineractPlatformTenantIds'] || 'default',
   // For connecting to others servers running elsewhere update the base API URL
-  baseApiUrls: 'https://core-dev.betterfinco.com',
+  baseApiUrls:
+    loadedEnv.fineractApiUrls ||
+    'https://core-dev.betterfinco.com',
   // For connecting to server running elsewhere set the base API URL
   baseApiUrl:
-    'https://core-dev.betterfinco.com',
+    loadedEnv['fineractApiUrl'] ||
+    (loadedEnv['fineractApiUrls']?.length > 0 ? loadedEnv['fineractApiUrls'].split(',')[0] : window.location.origin),
   allowServerSwitch: env.allow_switching_backend_instance,
   apiProvider: loadedEnv['apiProvider'] || '/fineract-provider/api',
   apiVersion: loadedEnv['apiVersion'] || '/v1',
